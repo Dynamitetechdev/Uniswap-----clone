@@ -246,7 +246,8 @@ export function getChainInfo(chainId: any): any {
   return undefined
 }
 
-const MAINNET_INFO = CHAIN_INFO[SupportedChainId.MAINNET]
+// const MAINNET_INFO = CHAIN_INFO[SupportedChainId.MAINNET]
+const SEPOLIA_INFO = CHAIN_INFO[SupportedChainId.SEPOLIA]
 export function getChainInfoOrDefault(chainId: number | undefined) {
-  return getChainInfo(chainId) ?? MAINNET_INFO
+  return getChainInfo(chainId) ?? SEPOLIA_INFO
 }
