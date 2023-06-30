@@ -30,8 +30,9 @@ const USDC_SEPOLIA = new Token(
   '0x6f14C02Fc1F78322cFd7d707aB90f18baD3B54f5',
   6,
   'USDC',
-  'USD//C'
+  'USD//C (sepolia testnet - dynamite)'
 )
+
 export const USDC_OPTIMISM = new Token(
   SupportedChainId.OPTIMISM,
   '0x7F5c764cBc14f9669B88837ca1490cCa17c31607',
@@ -432,10 +433,10 @@ export const WRAPPED_NATIVE_CURRENCY: { [chainId: number]: Token | undefined } =
   ),
   [SupportedChainId.SEPOLIA]: new Token(
     SupportedChainId.SEPOLIA,
-    '0xfFf9976782d46CC05630D1f6eBAb18b2324d6B14',
+    '0x626547420b8C05ca4737377d7423C57773f77c3E',
     18,
     'WETH',
-    'Wrapped Ether'
+    'Wrapped Ether (sepolia Testnet - dynamite)'
   ),
   [SupportedChainId.POLYGON]: new Token(
     SupportedChainId.POLYGON,
