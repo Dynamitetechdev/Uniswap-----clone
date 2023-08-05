@@ -25,12 +25,13 @@ const USDC_GOERLI = new Token(
   'USDC',
   'USD//C'
 )
+
 const USDC_SEPOLIA = new Token(
   SupportedChainId.SEPOLIA,
   '0x6f14C02Fc1F78322cFd7d707aB90f18baD3B54f5',
   6,
   'USDC',
-  'USD//C (sepolia testnet - dynamite)'
+  'USD//C'
 )
 
 export const USDC_OPTIMISM = new Token(
