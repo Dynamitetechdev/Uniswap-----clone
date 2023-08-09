@@ -370,6 +370,8 @@ export function Swap({
   )
 
   const maximumAmountIn = useMaxAmountIn(trade, allowedSlippage)
+
+  // const v2RouterAddress = '0x1De6fD86ae9CD35E676654A11A4d882ed2ef4f5c'
   const allowance = usePermit2Allowance(
     maximumAmountIn ??
       (parsedAmounts[Field.INPUT]?.currency.isToken
@@ -377,6 +379,8 @@ export function Swap({
         : undefined),
     isSupportedChain(chainId) ? UNIVERSAL_ROUTER_ADDRESS(chainId) : undefined
   )
+
+  // console.log('Universal Router', UNIVERSAL_ROUTER_ADDRESS(chainId))
 
   const maxInputAmount: CurrencyAmount<Currency> | undefined = useMemo(
     () => maxAmountSpend(currencyBalances[Field.INPUT]),
